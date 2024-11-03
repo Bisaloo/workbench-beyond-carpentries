@@ -12,20 +12,32 @@ find_workbench_repos <- function(out = stdout()) {
   # Manually checks confirm that both files are present everywhere...
   repos_workbench_search1 <- gh::gh("/search/code", q = "filename:sandpaper-main.yaml", accept = "application/vnd.github.v3+json", per_page = 100, .limit = Inf) |>
     purrr::pluck("items") |>
-    purrr::map_chr(~ purrr::pluck(.x, "repository", "full_name"))
+    purrr::map(function(element) {
+      c(
+        owner = purrr::pluck(element, "repository", "owner", "login"),
+        repo  = purrr::pluck(element, "repository", "name"),
+        owner_type = tolower(purrr::pluck(element, "repository", "owner", "type"))
+      )
+    }) |>
+    dplyr::bind_rows()
 
   repos_workbench_search2 <- gh::gh("/search/code", q = "filename:sandpaper-version.txt", accept = "application/vnd.github.v3+json", per_page = 100, .limit = Inf) |>
     purrr::pluck("items") |>
-    purrr::map_chr(~ purrr::pluck(.x, "repository", "full_name"))
+    purrr::map(function(element) {
+      c(
+        owner = purrr::pluck(element, "repository", "owner", "login"),
+        repo  = purrr::pluck(element, "repository", "name"),
+        owner_type = tolower(purrr::pluck(element, "repository", "owner", "type"))
+      )
+    }) |>
+    dplyr::bind_rows()
 
-  repos_workbench <- c(repos_workbench_search1, repos_workbench_search2) |>
-    unique() |>
-    # radix for locale independent sorting
-    sort(method = "radix") |>
-    setdiff("carpentries/sandpaper")
+  repos_workbench <- rbind(repos_workbench_search1, repos_workbench_search2) |>
+    dplyr::distinct() |>
+    dplyr::arrange(owner, repo) |>
+    dplyr::filter(repo != "sandpaper" | owner != "carpentries")
 
   repos_workbench |>
-    lapply(setNames, "repo") |>
     jsonlite::write_json(out, pretty = TRUE)
 
 }

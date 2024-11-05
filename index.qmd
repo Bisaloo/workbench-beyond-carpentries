@@ -1,0 +1,263 @@
+---
+title: "Use of the workbench beyond the Carpentries"
+subtitle: "Challenges and opportunities"
+author:
+  - name: "Hugo Gruson"
+    orcid: "0000-0002-4094-1476"
+date: last-modified
+format: 
+  dashboard:
+    orientation: columns
+    nav-buttons: github
+---
+
+```{r setup}
+knitr::opts_chunk$set(
+  cache = TRUE
+)
+library(tidyverse)
+```
+
+```{r}
+carpentry_orgs <- c(
+  "carpentries-incubator",
+  "datacarpentry",
+  "LibraryCarpentry",
+  "swcarpentry",
+  "carpentries-lab",
+  "fishtree-attempt",
+  "carpentries"
+)
+```
+
+```{r}
+repos_workbench <- jsonlite::read_json("data/repos_workbench.json", simplifyVector = TRUE)
+```
+
+```{r workbench_config}
+config_files <- repos_workbench |>
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::map(~ gh::gh("/repos/{owner}/{repo}/contents/{path}", owner = .x$owner, repo = .x$repo, path = "config.yaml")) |> 
+  purrr::map("content")
+
+config_contents <- config_files |> 
+  purrr::map(~ yaml::yaml.load(rawToChar(base64enc::base64decode(.x))))
+```
+
+```{r}
+lifecycle <- purrr::map_chr(config_contents, "life_cycle") |> 
+  cbind(lifecycle = _, repos_workbench)
+```
+
+# Overview
+
+## Who is hosting workbench lessons? {width=33%}
+
+### Some figures about workbench repos and their owners {height=20%}
+
+#### Col
+
+```{r}
+#| content: valuebox
+#| title: "Number of repositories"
+list(
+  color = "#10BED2",
+  value = nrow(repos_workbench)
+)
+```
+
+#### Col
+
+```{r}
+#| content: valuebox
+#| title: "Number of owners"
+list(
+  color = "#AEC800",
+  value = dplyr::n_distinct(repos_workbench$owner)
+)
+```
+
+### Histogram of owners and organizations
+
+```{r fig.height=10}
+# TODO: Facet by org / official / user
+# Add fill by lifecycle
+repos_workbench |>
+  dplyr::mutate(
+    lifecycle = lifecycle
+  ) |> 
+  dplyr::mutate(
+    owner = fct_lump_min(owner, 2, other_level = "Single repo owner")
+  ) |> 
+  dplyr::summarise(n = n(), .by = c("owner", "owner_type")) |> 
+  dplyr::mutate(
+    total = sum(n),
+    .by = "owner"
+  ) |> 
+  dplyr::mutate(
+    owner = fct_reorder(owner, total),
+    owner = fct_relevel(owner, "Single repo owner", after = 0)
+  ) |>
+  ggplot(aes(x = n, y = owner)) +
+    geom_col() +
+    facet_wrap(vars(owner_type), nrow = 2, scales = "free_y") +
+    theme_minimal() +
+    theme(
+      text = element_text(size = 20),
+      legend.position = "none"
+    )
+```
+
+## To whom are the lessons targeted? {width=33%}
+
+### Lifecycle
+
+```{r}
+lifecycle |> 
+  filter(lifecycle %in% c("pre-alpha", "alpha", "beta", "stable")) |> 
+  mutate(lifecycle = factor(lifecycle, levels = c("pre-alpha", "alpha", "beta", "stable"))) |>
+  ggplot(aes(y = lifecycle, fill = lifecycle)) +
+    geom_bar() +
+    scale_fill_manual(values = c(
+      "pre-alpha" = "#87CDDE",
+      "alpha"     = "#FF6600",
+      "beta"      = "#FFCC00",
+      "stable"    = "#71C837"
+    )) +
+    theme_minimal() +
+    theme(
+      text = element_text(size = 20),
+      legend.position = "none"
+    )
+```
+
+### Language
+
+```{r}
+config_contents |> 
+  set_names(repos_workbench$repo) |> 
+  purrr::map("lang") |> 
+  unlist() %>%
+  data.frame(repo = names(.), lang = .)
+```
+
+### Wordcloud of topic {height=45%}
+
+```{r}
+library(ggwordcloud)
+
+config_contents |> 
+  purrr::map("keywords") |> 
+  unlist() |> 
+  strsplit(",\\s*") |> 
+  unlist() |>
+  stringr::str_replace_all("\\-", " ") |>
+  stringr::str_replace_all("ization", "isation") |> 
+  table() |> 
+  as.data.frame() |> 
+  # Merge capitalisation variants
+  dplyr::arrange(desc(Freq)) |>
+  dplyr::group_by(tolower(Var1)) |> 
+  dplyr::summarise(
+    Freq = sum(Freq),
+    Var1 = first(Var1)
+  ) |> 
+  dplyr::filter(!Var1 %in% c("The Carpentries", "data", "software", "lesson")) |> 
+  ggplot(aes(label = Var1, size = Freq)) +
+    geom_text_wordcloud() +
+    scale_size_area(max_size = 10) +
+    theme_minimal()
+```
+
+## Features of Carpentries-style external lessons?
+
+### Are all built-in features used? {height=20%}
+
+```{r sandpaper_version}
+version_files <- repos_workbench |>
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::map(purrr::possibly(~ gh::gh("/repos/{owner}/{repo}/contents/{path}", owner = .x$owner, repo = .x$repo, path = ".github/workflows/sandpaper-version.txt"), otherwise = "")) |> 
+  purrr::map("content")
+
+sandpaper_versions <- version_files |>
+  unlist() |> 
+  purrr::map_chr(~ rawToChar(base64enc::base64decode(.x))) |> 
+  stringr::str_remove_all("\\s")
+```
+
+```{r}
+sandpaper_versions |> 
+  versionr::version_number() |> 
+  sort() |> 
+  as.factor() |> 
+  table()
+```
+
+```{r uses_rmd}
+uses_rmd <- repos_workbench |>
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::map(purrr::possibly(~ gh::gh("/repos/{owner}/{repo}/contents/{path}", owner = .x$owner, repo = .x$repo, path = "renv/profiles/lesson-requirements/renv.lock"))) |> 
+  purrr::map_lgl(is.null)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Rmd vs md template"
+list(
+  color = "#10BED2",
+  value = sprintf("%.0f%%", sum(uses_rmd) / length(uses_rmd) * 100)
+)
+```
+
+#### Col
+
+```{r collect_contributors}
+contributors <- repos_workbench |> 
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::map(~ gh::gh("/repos/{owner}/{repo}/contributors", owner = .x$owner, repo = .x$repo, per_page = 100, .limit = Inf)) |> 
+  purrr::map(~ purrr::map_chr(.x, "login"))
+```
+
+### Are extra features added?
+
+
+```{r}
+config_contents |> 
+  purrr::set_names(repos_workbench$repo) |>
+  purrr::imap(~ c(name = .y, custom = .x[c("sandpaper", "varnish","pegboard")])) |> 
+  dplyr::bind_rows() |> 
+  dplyr::select(-name) |>
+  dplyr::mutate(dplyr::across(everything(), ~ !is.na(.x))) |> 
+  colSums()
+```
+
+# Screenshots {scrolling="true"}
+
+## Col {width = 50%}
+
+```{r, eval = FALSE}
+repos_workbench |> 
+  dplyr::mutate(url = glue::glue("https://{tolower(owner)}.github.io/{repo}")) |> 
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::walk(safely(function(element) {
+    webshot2::webshot(
+      element$url, 
+      glue::glue("screenshots/{element$owner}_{element$repo}.png"),
+      selector = ".navbar",
+      vwidth = 1400,
+      expand = c(0, 0, 20, 0)
+    )
+  }))
+```
+
+```{r}
+#| class-output: screenshots
+knitr::include_graphics(fs::dir_ls("screenshots"))
+```
+
+# Methods

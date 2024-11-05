@@ -750,6 +750,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "cobalt-casco",
+    "repo": "r-shiny-geospatial",
+    "owner_type": "organization"
+  },
+  {
     "owner": "csiro-data-school",
     "repo": "git-intro-24",
     "owner_type": "organization"
@@ -981,6 +986,11 @@
   },
   {
     "owner": "esciencecenter-digital-skills",
+    "repo": "medical-image-processing",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "esciencecenter-digital-skills",
     "repo": "parallel-python-workbench",
     "owner_type": "organization"
   },
@@ -1108,6 +1118,11 @@
     "owner": "kaust-generative-ai",
     "repo": "local-deployment-of-generative-ai-models",
     "owner_type": "organization"
+  },
+  {
+    "owner": "lguy",
+    "repo": "course-microbial-genomics",
+    "owner_type": "user"
   },
   {
     "owner": "lonsbio",

@@ -31,7 +31,10 @@ carpentry_orgs <- c(
 ```
 
 ```{r}
-repos_workbench <- jsonlite::read_json("data/repos_workbench.json", simplifyVector = TRUE)
+repos_workbench <- jsonlite::read_json("data/repos_workbench.json", simplifyVector = TRUE) |> 
+  dplyr::mutate(
+    owner_type = if_else(owner %in% carpentry_orgs, "Carpentries", owner_type)
+  )
 ```
 
 ```{r workbench_config}
@@ -52,7 +55,7 @@ lifecycle <- purrr::map_chr(config_contents, "life_cycle") |>
 
 # Overview
 
-## Who is hosting workbench lessons? {width=33%}
+## Who is hosting workbench lessons? {width=25%}
 
 ### Some figures about workbench repos and their owners {height=20%}
 
@@ -61,8 +64,8 @@ lifecycle <- purrr::map_chr(config_contents, "life_cycle") |>
 ```{r}
 #| content: valuebox
 #| title: "Number of repositories"
+#| color: secondary
 list(
-  color = "#10BED2",
   value = nrow(repos_workbench)
 )
 ```
@@ -72,8 +75,8 @@ list(
 ```{r}
 #| content: valuebox
 #| title: "Number of owners"
+#| color: primary
 list(
-  color = "#AEC800",
   value = dplyr::n_distinct(repos_workbench$owner)
 )
 ```
@@ -82,11 +85,7 @@ list(
 
 ```{r fig.height=10}
 # TODO: Facet by org / official / user
-# Add fill by lifecycle
 repos_workbench |>
-  dplyr::mutate(
-    lifecycle = lifecycle
-  ) |> 
   dplyr::mutate(
     owner = fct_lump_min(owner, 2, other_level = "Single repo owner")
   ) |> 
@@ -99,25 +98,29 @@ repos_workbench |>
     owner = fct_reorder(owner, total),
     owner = fct_relevel(owner, "Single repo owner", after = 0)
   ) |>
-  ggplot(aes(x = n, y = owner)) +
+  ggplot(aes(x = n, y = owner, fill = owner_type)) +
     geom_col() +
-    facet_wrap(vars(owner_type), nrow = 2, scales = "free_y") +
     theme_minimal() +
     theme(
       text = element_text(size = 20),
-      legend.position = "none"
+      legend.position = "bottom"
     )
 ```
 
-## To whom are the lessons targeted? {width=33%}
+## To whom are the lessons targeted? {width=50%}
 
-### Lifecycle
+### Row {height=25%}
+
+#### Lifecycle
 
 ```{r}
 lifecycle |> 
   filter(lifecycle %in% c("pre-alpha", "alpha", "beta", "stable")) |> 
-  mutate(lifecycle = factor(lifecycle, levels = c("pre-alpha", "alpha", "beta", "stable"))) |>
-  ggplot(aes(y = lifecycle, fill = lifecycle)) +
+  mutate(
+    lifecycle = factor(lifecycle, levels = c("pre-alpha", "alpha", "beta", "stable")),
+    carpentries = owner_type == "Carpentries"
+  ) |>
+  ggplot(aes(y = lifecycle, fill = lifecycle, alpha = !carpentries)) +
     geom_bar() +
     scale_fill_manual(values = c(
       "pre-alpha" = "#87CDDE",
@@ -127,19 +130,32 @@ lifecycle |>
     )) +
     theme_minimal() +
     theme(
-      text = element_text(size = 20),
-      legend.position = "none"
-    )
+      text = element_text(size = 32),
+      legend.position = "right"
+    ) +
+    scale_alpha_manual(values = c(0.3, 1), labels = c("Official", "Unofficial"), name = "Lesson type") +
+    guides(fill = "none")
 ```
 
-### Language
+#### Language
 
 ```{r}
 config_contents |> 
   set_names(repos_workbench$repo) |> 
   purrr::map("lang") |> 
   unlist() %>%
-  data.frame(repo = names(.), lang = .)
+  data.frame(repo = names(.), lang = .) |> 
+  summarise(n = n(), .by = lang) |>
+  mutate(code = if_else(lang == "en", "gb", lang)) |>
+  ggplot(aes(x = n, y = lang)) +
+    geom_col() +
+    theme_minimal() +
+    ggimage::geom_flag(x = -6, aes(image = code), size = 0.17) +
+    expand_limits(x = -7) +
+    theme(
+      text = element_text(size = 32),
+      legend.position = "none"
+    )
 ```
 
 ### Wordcloud of topic {height=45%}
@@ -154,17 +170,17 @@ config_contents |>
   unlist() |>
   stringr::str_replace_all("\\-", " ") |>
   stringr::str_replace_all("ization", "isation") |> 
-  table() |> 
-  as.data.frame() |> 
-  # Merge capitalisation variants
-  dplyr::arrange(desc(Freq)) |>
-  dplyr::group_by(tolower(Var1)) |> 
+  data.frame(keyword = _) |> 
+  # Default keywords from the template
+  dplyr::filter(!keyword %in% c("The Carpentries", "data", "software", "lesson")) |> 
+  # Merge capitalisation variants and keep the most frequent variant
+  dplyr::group_by(tolower(keyword)) |> 
   dplyr::summarise(
-    Freq = sum(Freq),
-    Var1 = first(Var1)
+    freq = n(),
+    keyword = levels(fct_infreq(keyword))[1]
   ) |> 
-  dplyr::filter(!Var1 %in% c("The Carpentries", "data", "software", "lesson")) |> 
-  ggplot(aes(label = Var1, size = Freq)) +
+  dplyr::filter(freq > 1) |> 
+  ggplot(aes(label = keyword, size = freq)) +
     geom_text_wordcloud() +
     scale_size_area(max_size = 10) +
     theme_minimal()
@@ -172,28 +188,9 @@ config_contents |>
 
 ## Features of Carpentries-style external lessons?
 
-### Are all built-in features used? {height=20%}
+### Row {height=25%}
 
-```{r sandpaper_version}
-version_files <- repos_workbench |>
-  as.list() |> 
-  purrr::transpose() |> 
-  purrr::map(purrr::possibly(~ gh::gh("/repos/{owner}/{repo}/contents/{path}", owner = .x$owner, repo = .x$repo, path = ".github/workflows/sandpaper-version.txt"), otherwise = "")) |> 
-  purrr::map("content")
-
-sandpaper_versions <- version_files |>
-  unlist() |> 
-  purrr::map_chr(~ rawToChar(base64enc::base64decode(.x))) |> 
-  stringr::str_remove_all("\\s")
-```
-
-```{r}
-sandpaper_versions |> 
-  versionr::version_number() |> 
-  sort() |> 
-  as.factor() |> 
-  table()
-```
+#### Rmd vs md template
 
 ```{r uses_rmd}
 uses_rmd <- repos_workbench |>
@@ -206,8 +203,8 @@ uses_rmd <- repos_workbench |>
 ```{r}
 #| content: valuebox
 #| title: "Rmd vs md template"
+#| color: info
 list(
-  color = "#10BED2",
   value = sprintf("%.0f%%", sum(uses_rmd) / length(uses_rmd) * 100)
 )
 ```
@@ -215,15 +212,61 @@ list(
 #### Col
 
 ```{r collect_contributors}
-contributors <- repos_workbench |> 
+prs <- repos_workbench |> 
   as.list() |> 
   purrr::transpose() |> 
-  purrr::map(~ gh::gh("/repos/{owner}/{repo}/contributors", owner = .x$owner, repo = .x$repo, per_page = 100, .limit = Inf)) |> 
-  purrr::map(~ purrr::map_chr(.x, "login"))
+  purrr::map(purrr::possibly(~ gh::gh("/repos/{owner}/{repo}/pulls", owner = .x$owner, repo = .x$repo, per_page = 100, state = "all"), otherwise = list(list("title" = ""))))
+```
+
+```{r}
+using_bot <- repos_workbench |> 
+  dplyr::mutate(
+    uses_bot = purrr::map_lgl(prs, ~ any(grepl("^Update (\\d+ packages|Workflows)", purrr::map_chr(.x, "title"))))
+  ) |> 
+  dplyr::pull(uses_bot)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Dependencies update bot"
+#| color: secondary
+list(
+  value = sprintf("%.0f%%", sum(using_bot) / length(using_bot) * 100)
+)
+```
+
+### Sandpaper version
+
+```{r sandpaper_version}
+version_files <- repos_workbench |>
+  as.list() |> 
+  purrr::transpose() |> 
+  purrr::map(purrr::possibly(~ gh::gh("/repos/{owner}/{repo}/contents/{path}", owner = .x$owner, repo = .x$repo, path = ".github/workflows/sandpaper-version.txt"), otherwise = "")) |> 
+  purrr::map("content")
+
+sandpaper_versions <- version_files |>
+  set_names(repos_workbench$repo) |>
+  unlist() |> 
+  tibble::enframe(name = "repo", value = "version") |>
+  dplyr::mutate(
+    version = purrr::map_chr(version, ~ rawToChar(base64enc::base64decode(.x))),
+    version = stringr::str_remove_all(version, "\\s"),
+    version = versionr::version_number(version),
+    version = as.factor(version)
+  )
+```
+
+```{r}
+sandpaper_versions |> 
+  ggplot(aes(y = version)) +
+    geom_bar() +
+    theme_minimal() +
+    theme(
+      text = element_text(size = 32)
+    )
 ```
 
 ### Are extra features added?
-
 
 ```{r}
 config_contents |> 
@@ -231,8 +274,10 @@ config_contents |>
   purrr::imap(~ c(name = .y, custom = .x[c("sandpaper", "varnish","pegboard")])) |> 
   dplyr::bind_rows() |> 
   dplyr::select(-name) |>
-  dplyr::mutate(dplyr::across(everything(), ~ !is.na(.x))) |> 
-  colSums()
+  dplyr::rowwise() |> 
+  dplyr::mutate(forked_component = any(!is.na(c_across(everything())))) |>
+  dplyr::pull(forked_component) |>
+  sum()
 ```
 
 # Screenshots {scrolling="true"}
@@ -257,7 +302,50 @@ repos_workbench |>
 
 ```{r}
 #| class-output: screenshots
-knitr::include_graphics(fs::dir_ls("screenshots"))
+#| width: 50%
+#| output: asis
+fs::dir_ls("screenshots") |> 
+  purrr::walk(~ cat(glue::glue("![]({{.x}}){fig-align='center' width=60%}", .open = "{{", .close = "}}"), "\n"))
 ```
 
 # Methods
+
+::: {.card title="Methods"}
+
+## Identification of repositories using the workbench
+
+Repositories that use the workbench are identified by the presence of a `sandpaper-main.yaml` or `sandpaper-version.txt` file in the `.github/workflows` directory.
+
+## Metadata and config options
+
+In each repository using the workbench, the `config.yaml` file is parsed to extract the following information:
+
+- `keywords`: used to generate the wordcloud
+- `lifecycle`
+- `lang`
+- `license`: ignored in the analysis as at the time of writing, all repositories use the same license: CC-BY 4.0
+- use of a custom sandpaper, varnish or pegboard fork or branch
+
+### Other features
+
+- To determine is the repository uses Rmd (vs md) files, we check if the `renv.lock` file is present in the `renv/profiles/lesson-requirements` directory.
+- To determine if the repository uses the dependencies update bot, we check it has any pull request with the title containing the string `Update n packages` or `Update Workflows`.
+- The sandpaper version is recorded in the `.github/workflows/sandpaper-version.txt` file.
+
+## Tools
+
+```{r, results='asis'}
+summary(report::report(sessionInfo()))
+```
+
+<details><summary>Citations</summary>
+
+```{r, results='asis'}
+report::cite_packages()
+```
+
+</details>
+
+:::
+
+

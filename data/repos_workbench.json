@@ -190,6 +190,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "MetOffice",
+    "repo": "git-working-practices",
+    "owner_type": "organization"
+  },
+  {
     "owner": "MikeTrizna",
     "repo": "cldt_demo2",
     "owner_type": "user"

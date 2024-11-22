@@ -188,7 +188,7 @@ config_contents |>
 
 ## Features of Carpentries-style external lessons?
 
-### Row {height=25%}
+### Row {height=20%}
 
 #### Rmd vs md template
 

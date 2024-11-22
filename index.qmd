@@ -83,7 +83,7 @@ list(
 
 ### Histogram of owners and organizations
 
-```{r fig.height=10}
+```{r fig.height=13}
 # TODO: Facet by org / official / user
 repos_workbench |>
   dplyr::mutate(
@@ -105,7 +105,8 @@ repos_workbench |>
       text = element_text(size = 20),
       legend.position = "bottom"
     ) +
-    labs(x = "Number of repositories", y = "Owner")
+    labs(x = "Number of repositories", y = "Owner") +
+    scale_fill_brewer(palette = "Set1")
 ```
 
 ## To whom are the lessons targeted? {width=50%}
@@ -182,7 +183,6 @@ config_contents |>
     freq = n(),
     keyword = levels(fct_infreq(keyword))[1]
   ) |> 
-  dplyr::filter(freq > 1) |> 
   ggplot(aes(label = keyword, size = freq)) +
     geom_text_wordcloud() +
     scale_size_area(max_size = 10) +

@@ -75,7 +75,7 @@ list(
 ```{r}
 #| content: valuebox
 #| title: "Number of owners"
-#| color: primary
+#| color: secondary
 list(
   value = dplyr::n_distinct(repos_workbench$owner)
 )
@@ -207,7 +207,7 @@ uses_rmd <- repos_workbench |>
 ```{r}
 #| content: valuebox
 #| title: "Rmd vs md template"
-#| color: info
+#| color: secondary
 list(
   value = sprintf("%.0f%%", sum(uses_rmd) / length(uses_rmd) * 100)
 )

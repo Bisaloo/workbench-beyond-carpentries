@@ -104,7 +104,8 @@ repos_workbench |>
     theme(
       text = element_text(size = 20),
       legend.position = "bottom"
-    )
+    ) +
+    labs(x = "Number of repositories", y = "Owner")
 ```
 
 ## To whom are the lessons targeted? {width=50%}
@@ -134,7 +135,8 @@ lifecycle |>
       legend.position = "right"
     ) +
     scale_alpha_manual(values = c(0.3, 1), labels = c("Official", "Unofficial"), name = "Lesson type") +
-    guides(fill = "none")
+    guides(fill = "none") +
+    labs(x = "Number of repositories", y = "Lifecycle")
 ```
 
 #### Language
@@ -155,7 +157,8 @@ config_contents |>
     theme(
       text = element_text(size = 32),
       legend.position = "none"
-    )
+    ) +
+    labs(x = "Number of repositories", y = "Language")
 ```
 
 ### Wordcloud of topic {height=45%}
@@ -183,7 +186,8 @@ config_contents |>
   ggplot(aes(label = keyword, size = freq)) +
     geom_text_wordcloud() +
     scale_size_area(max_size = 10) +
-    theme_minimal()
+    theme_minimal() +
+    labs(title = "Keywords in Carpentries-style lessons")
 ```
 
 ## Features of Carpentries-style external lessons?
@@ -256,13 +260,17 @@ sandpaper_versions <- version_files |>
   )
 ```
 
-```{r}
+```{r fig.height=10}
 sandpaper_versions |> 
   ggplot(aes(y = version)) +
     geom_bar() +
     theme_minimal() +
     theme(
-      text = element_text(size = 32)
+      text = element_text(size = 24)
+    ) +
+    labs(
+      x = "Number of repositories",
+      y = "sandpaper version"
     )
 ```
 

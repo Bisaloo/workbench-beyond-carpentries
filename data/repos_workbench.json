@@ -1,8 +1,23 @@
 [
   {
+    "owner": "AFM-SPM",
+    "repo": "topostats-training",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "AbiReg",
+    "repo": "github-skillup-2023-10-16-AbiReg",
+    "owner_type": "user"
+  },
+  {
     "owner": "Azinkarimzad",
     "repo": "imaging_underground",
     "owner_type": "user"
+  },
+  {
+    "owner": "BioRDM",
+    "repo": "fair-for-busy-biologists",
+    "owner_type": "organization"
   },
   {
     "owner": "COMP1005",
@@ -20,13 +35,48 @@
     "owner_type": "user"
   },
   {
+    "owner": "Degoot-AM",
+    "repo": "test_workbench",
+    "owner_type": "user"
+  },
+  {
+    "owner": "Dr-Eberle-Zentrum",
+    "repo": "FDM-basics",
+    "owner_type": "organization"
+  },
+  {
     "owner": "Dr-Eberle-Zentrum",
     "repo": "Python-pandas-compact",
     "owner_type": "organization"
   },
   {
+    "owner": "Dr-Eberle-Zentrum",
+    "repo": "R-tidyverse-compact",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "Dr-Eberle-Zentrum",
+    "repo": "self-hosted-datamanagement",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "DrDaveTurner",
+    "repo": "HPC-User",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ErinBecker",
+    "repo": "sourdough-cinnamon-rolls",
+    "owner_type": "user"
+  },
+  {
     "owner": "FAIR2-for-research-software",
     "repo": "Documentation",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "FAIR2-for-research-software",
+    "repo": "Software_Lifecycle_Planning",
     "owner_type": "organization"
   },
   {
@@ -40,6 +90,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "HPCBio",
+    "repo": "hpcbio-swc-shell-novice-sp2025",
+    "owner_type": "organization"
+  },
+  {
     "owner": "HealthBioscienceIDEAS",
     "repo": "Medical-Image-Registration-Short-Course",
     "owner_type": "organization"
@@ -47,6 +102,11 @@
   {
     "owner": "HealthBioscienceIDEAS",
     "repo": "aaic2024-neuroimaging-workshop",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "HealthBioscienceIDEAS",
+    "repo": "eu-mind2024-neuroimaging-workshop",
     "owner_type": "organization"
   },
   {
@@ -80,9 +140,19 @@
     "owner_type": "organization"
   },
   {
+    "owner": "INTERSECT-training",
+    "repo": "Project-Management",
+    "owner_type": "organization"
+  },
+  {
     "owner": "Imageomics",
     "repo": "snakemake-workshop",
     "owner_type": "organization"
+  },
+  {
+    "owner": "JCSzamosi",
+    "repo": "github-skillup-2023-10-26-JCSzamosi",
+    "owner_type": "user"
   },
   {
     "owner": "KUBDatalab",
@@ -91,7 +161,27 @@
   },
   {
     "owner": "KUBDatalab",
+    "repo": "R-api_new",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "KUBDatalab",
+    "repo": "R-intro",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "KUBDatalab",
+    "repo": "R-textmining_new",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "KUBDatalab",
     "repo": "R-toolbox",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "KUBDatalab",
+    "repo": "R-visualisation_new",
     "owner_type": "organization"
   },
   {
@@ -102,6 +192,11 @@
   {
     "owner": "LearnToDiscover",
     "repo": "lesson-template",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-collaborative-science",
     "owner_type": "organization"
   },
   {
@@ -156,6 +251,11 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-reproducible-research",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-shell",
     "owner_type": "organization"
   },
@@ -171,8 +271,18 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-team-agreements",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-wikidata",
     "owner_type": "organization"
+  },
+  {
+    "owner": "Lucy-oshea",
+    "repo": "pilot-rdm",
+    "owner_type": "user"
   },
   {
     "owner": "Lucy-oshea",
@@ -200,14 +310,49 @@
     "owner_type": "user"
   },
   {
+    "owner": "MitchellAcoustics",
+    "repo": "ReproducibleResearchTraining",
+    "owner_type": "user"
+  },
+  {
     "owner": "NOC-OI",
     "repo": "git-novice",
     "owner_type": "organization"
   },
   {
+    "owner": "NclRSE-Training",
+    "repo": "python-novice-programming-gapminder",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "PythonFZ",
+    "repo": "stunning-engine",
+    "owner_type": "user"
+  },
+  {
     "owner": "RSE-Sheffield",
     "repo": "pando-python",
     "owner_type": "organization"
+  },
+  {
+    "owner": "RicCampbell",
+    "repo": "FAIR4RS_repos_dois",
+    "owner_type": "user"
+  },
+  {
+    "owner": "Romain-Thomas-Shef",
+    "repo": "FAIR24RS_Software_lifecycle_planning",
+    "owner_type": "user"
+  },
+  {
+    "owner": "Romain-Thomas-Shef",
+    "repo": "FAIR_Code_design",
+    "owner_type": "user"
+  },
+  {
+    "owner": "Romain-Thomas-Shef",
+    "repo": "Publish_software_training",
+    "owner_type": "user"
   },
   {
     "owner": "Sara-Ll",
@@ -218,6 +363,31 @@
     "owner": "SaraMorsy",
     "repo": "FAIR",
     "owner_type": "user"
+  },
+  {
+    "owner": "ShebMichel",
+    "repo": "github-skillup-2024-05-21-ShebMichel",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ShrRa",
+    "repo": "Carpentries-Workbench-Template",
+    "owner_type": "user"
+  },
+  {
+    "owner": "SylviaWhittle",
+    "repo": "python-testing-for-research",
+    "owner_type": "user"
+  },
+  {
+    "owner": "TheJacksonLaboratory",
+    "repo": "singularity-workshop-2023",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "UAL-RE",
+    "repo": "lc-containers_vms",
+    "owner_type": "organization"
   },
   {
     "owner": "UCL-ARC",
@@ -265,6 +435,16 @@
     "owner_type": "organization"
   },
   {
+    "owner": "UoMResearchIT",
+    "repo": "docker-introduction",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "UoMResearchIT",
+    "repo": "matlab-novice",
+    "owner_type": "organization"
+  },
+  {
     "owner": "Victoria-Bruno",
     "repo": "test-lesson",
     "owner_type": "user"
@@ -275,13 +455,43 @@
     "owner_type": "organization"
   },
   {
+    "owner": "acceleratingdigitalskills",
+    "repo": "Processing-Text-Based-Corpora",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "acrall",
+    "repo": "github-skillup-2023-10-16-acrall",
+    "owner_type": "user"
+  },
+  {
     "owner": "adamancer",
     "repo": "python-ecology-lesson-alt",
     "owner_type": "user"
   },
   {
+    "owner": "adamancer",
+    "repo": "python-polars-lesson",
+    "owner_type": "user"
+  },
+  {
+    "owner": "aforestsomewhere",
+    "repo": "bacterial-genome-assembly",
+    "owner_type": "user"
+  },
+  {
     "owner": "alefisico",
     "repo": "reana-tutorial",
+    "owner_type": "user"
+  },
+  {
+    "owner": "alexiswl",
+    "repo": "cwl-novice-tutorial",
+    "owner_type": "user"
+  },
+  {
+    "owner": "alexiswl",
+    "repo": "test-workbench-template",
     "owner_type": "user"
   },
   {
@@ -307,6 +517,16 @@
   {
     "owner": "asliuyar",
     "repo": "translational-omics-AD",
+    "owner_type": "user"
+  },
+  {
+    "owner": "avallecam",
+    "repo": "workbench-spanish",
+    "owner_type": "user"
+  },
+  {
+    "owner": "avallecam",
+    "repo": "workbench-template",
     "owner_type": "user"
   },
   {
@@ -337,6 +557,31 @@
   {
     "owner": "broadinstitute",
     "repo": "2024-09-27-python-intro-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "btmoyers",
+    "repo": "bash-genomics",
+    "owner_type": "user"
+  },
+  {
+    "owner": "btmoyers",
+    "repo": "wrangling-transcriptomics",
+    "owner_type": "user"
+  },
+  {
+    "owner": "c4r-io",
+    "repo": "lesson-dev_data-viz",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "callaghanmt-training",
+    "repo": "python-novice-inflammation",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "callaghanmt-training",
+    "repo": "swd1a-python-2023",
     "owner_type": "organization"
   },
   {
@@ -456,6 +701,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "bioc-scrnaseq",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "deep-learning-intro",
     "owner_type": "organization"
   },
@@ -552,6 +802,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "managing-computational-projects",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "medical-image-processing",
     "owner_type": "organization"
   },
   {
@@ -655,6 +910,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "catherine-martlin",
+    "repo": "github-skillup-2024-05-29-catherine-martlin",
+    "owner_type": "user"
+  },
+  {
     "owner": "cbw-dev",
     "repo": "INR_2024_Recreate_Carpentries",
     "owner_type": "organization"
@@ -677,6 +937,11 @@
   {
     "owner": "chennesy",
     "repo": "lc-python-apis",
+    "owner_type": "user"
+  },
+  {
+    "owner": "christopher-wild",
+    "repo": "FAIR4RS-Packaging",
     "owner_type": "user"
   },
   {
@@ -776,7 +1041,27 @@
   },
   {
     "owner": "culturedigitalskills",
+    "repo": "2024-copyright-data",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "culturedigitalskills",
+    "repo": "2024-digitisation-3d-photogrammetry",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "culturedigitalskills",
     "repo": "2024-digitisation-photogrammetry",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "culturedigitalskills",
+    "repo": "2024-ethics-data",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "culturedigitalskills",
+    "repo": "2024-storytelling-3d-data",
     "owner_type": "organization"
   },
   {
@@ -925,6 +1210,26 @@
     "owner_type": "user"
   },
   {
+    "owner": "ecosystem2",
+    "repo": "github-skillup-2023-10-26-ecosystem2",
+    "owner_type": "user"
+  },
+  {
+    "owner": "eduardklap",
+    "repo": "prep-pub-pkg",
+    "owner_type": "user"
+  },
+  {
+    "owner": "elichad",
+    "repo": "ubiquitous-journey",
+    "owner_type": "user"
+  },
+  {
+    "owner": "emcaulay",
+    "repo": "github-skillup-2023-10-17-emcaulay",
+    "owner_type": "user"
+  },
+  {
     "owner": "epiverse-trace",
     "repo": "epimodelac",
     "owner_type": "organization"
@@ -981,6 +1286,21 @@
   },
   {
     "owner": "esciencecenter-digital-skills",
+    "repo": "efficient-computing-in-julia",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "esciencecenter-digital-skills",
+    "repo": "git-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "esciencecenter-digital-skills",
+    "repo": "good-practices-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "esciencecenter-digital-skills",
     "repo": "lesson-machine-learning-intro",
     "owner_type": "organization"
   },
@@ -998,6 +1318,11 @@
     "owner": "esciencecenter-digital-skills",
     "repo": "parallel-python-workbench",
     "owner_type": "organization"
+  },
+  {
+    "owner": "fboehm",
+    "repo": "workflowr-workshop",
+    "owner_type": "user"
   },
   {
     "owner": "fishtree-attempt",
@@ -1055,13 +1380,38 @@
     "owner_type": "user"
   },
   {
+    "owner": "gentlelab2016",
+    "repo": "github-skillup-2024-05-29-gentlelab2016",
+    "owner_type": "user"
+  },
+  {
     "owner": "hpc-carpentry",
     "repo": "hpc-chapel",
     "owner_type": "organization"
   },
   {
+    "owner": "hyerynn0521",
+    "repo": "buoyant-barnacle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "iramosp",
+    "repo": "github-skillup-2023-10-17-iramosp",
+    "owner_type": "user"
+  },
+  {
+    "owner": "j-p-courneya",
+    "repo": "github-skillup-2023-10-16-j-p-courneya",
+    "owner_type": "user"
+  },
+  {
     "owner": "jcohen02",
     "repo": "my-carpentries-lesson",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jensbri",
+    "repo": "ML-test",
     "owner_type": "user"
   },
   {
@@ -1071,7 +1421,27 @@
   },
   {
     "owner": "jlchang",
+    "repo": "2024-05-09-Unix_Shell_pilot",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jlchang",
+    "repo": "2024-05-09-jlchang4pilot",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jlchang",
+    "repo": "2024-06-21-unix-shell-lesson",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jlchang",
     "repo": "cb-python-intro-lesson-template",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jlchang",
+    "repo": "cb-unix-shell-lesson-template",
     "owner_type": "user"
   },
   {
@@ -1086,7 +1456,22 @@
   },
   {
     "owner": "joelnitta",
+    "repo": "r-novice-gapminder",
+    "owner_type": "user"
+  },
+  {
+    "owner": "joelnitta",
     "repo": "targets-hpc",
+    "owner_type": "user"
+  },
+  {
+    "owner": "joelnitta",
+    "repo": "test-lesson-trans",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jsgro",
+    "repo": "buoyant-barnacle",
     "owner_type": "user"
   },
   {
@@ -1105,8 +1490,33 @@
     "owner_type": "user"
   },
   {
+    "owner": "jt14den",
+    "repo": "python-intro",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jt14den",
+    "repo": "test-lesson",
+    "owner_type": "user"
+  },
+  {
     "owner": "jutol",
     "repo": "nocodb-for-humanities",
+    "owner_type": "user"
+  },
+  {
+    "owner": "karina-rodriguez",
+    "repo": "2024-VR-history",
+    "owner_type": "user"
+  },
+  {
+    "owner": "karina-rodriguez",
+    "repo": "2024-VR-introduction",
+    "owner_type": "user"
+  },
+  {
+    "owner": "katefoneill",
+    "repo": "fair4rs_software_licensing",
     "owner_type": "user"
   },
   {
@@ -1123,6 +1533,36 @@
     "owner": "kaust-generative-ai",
     "repo": "local-deployment-of-generative-ai-models",
     "owner_type": "organization"
+  },
+  {
+    "owner": "kerchner",
+    "repo": "lc-open-reproducible-research-cloud",
+    "owner_type": "user"
+  },
+  {
+    "owner": "kerchner",
+    "repo": "workbench-rmd-test",
+    "owner_type": "user"
+  },
+  {
+    "owner": "kristi-sara",
+    "repo": "github-skillup-2023-10-16-Kristi-sara",
+    "owner_type": "user"
+  },
+  {
+    "owner": "kthlnktng",
+    "repo": "github-skillup-2024-05-29-kthlnktng",
+    "owner_type": "user"
+  },
+  {
+    "owner": "laderast",
+    "repo": "academy_draft",
+    "owner_type": "user"
+  },
+  {
+    "owner": "lemythe",
+    "repo": "github-skillup-2023-10-11-lemythe",
+    "owner_type": "user"
   },
   {
     "owner": "lguy",
@@ -1145,8 +1585,63 @@
     "owner_type": "user"
   },
   {
+    "owner": "mariariveraaraya",
+    "repo": "cloud_lessons",
+    "owner_type": "user"
+  },
+  {
+    "owner": "marijane",
+    "repo": "github-skillup-2024-05-30-marijane",
+    "owner_type": "user"
+  },
+  {
+    "owner": "marionwalton",
+    "repo": "media-test",
+    "owner_type": "user"
+  },
+  {
+    "owner": "marklcrowe",
+    "repo": "Statistical_Comparisons_using_R",
+    "owner_type": "user"
+  },
+  {
+    "owner": "matthieu-bruneaux",
+    "repo": "github-skillup-2023-10-11-matthieu-bruneaux",
+    "owner_type": "user"
+  },
+  {
+    "owner": "meghalgandhi1019",
+    "repo": "github-skillup-2024-05-29-meghalgandhi1019",
+    "owner_type": "user"
+  },
+  {
+    "owner": "metut",
+    "repo": "github-skillup-2024-05-29-metut",
+    "owner_type": "user"
+  },
+  {
     "owner": "michaelcoe",
     "repo": "Data-Management-Training",
+    "owner_type": "user"
+  },
+  {
+    "owner": "michaelcoe",
+    "repo": "python-data-anonimization",
+    "owner_type": "user"
+  },
+  {
+    "owner": "milanmlft",
+    "repo": "sandpaper-test",
+    "owner_type": "user"
+  },
+  {
+    "owner": "milanmlft",
+    "repo": "sandpaper-test-releases",
+    "owner_type": "user"
+  },
+  {
+    "owner": "misgna3",
+    "repo": "github-skillup-2023-10-17-misgna3",
     "owner_type": "user"
   },
   {
@@ -1165,6 +1660,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "ns-rse",
+    "repo": "git-collaboration-backup",
+    "owner_type": "user"
+  },
+  {
     "owner": "ocaisa",
     "repo": "shell-novice-de",
     "owner_type": "user"
@@ -1180,9 +1680,19 @@
     "owner_type": "user"
   },
   {
+    "owner": "owsleybc",
+    "repo": "github-skillup-2024-05-21-owsleybc",
+    "owner_type": "user"
+  },
+  {
     "owner": "parvin74",
     "repo": "imaging_underground",
     "owner_type": "user"
+  },
+  {
+    "owner": "qcif-training",
+    "repo": "intro_nlp_lmm_v1.0",
+    "owner_type": "organization"
   },
   {
     "owner": "quist00",
@@ -1237,6 +1747,11 @@
   {
     "owner": "siobhon-egan",
     "repo": "git-command-line",
+    "owner_type": "user"
+  },
+  {
+    "owner": "smcclatchy",
+    "repo": "omicstranslationAD_AAIC",
     "owner_type": "user"
   },
   {
@@ -1310,8 +1825,23 @@
     "owner_type": "organization"
   },
   {
+    "owner": "swcarpentry-ja",
+    "repo": "r-novice-gapminder",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "swcarpentry-ja",
+    "repo": "shell-novice",
+    "owner_type": "organization"
+  },
+  {
     "owner": "szsctt",
     "repo": "cmri_R_workshop",
+    "owner_type": "user"
+  },
+  {
+    "owner": "t4k",
+    "repo": "upgraded-fiesta",
     "owner_type": "user"
   },
   {
@@ -1321,12 +1851,57 @@
   },
   {
     "owner": "tdjames1",
+    "repo": "test-workbench-2",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tdjames1",
+    "repo": "test-workbench-project",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tdjames1",
     "repo": "test-workbench-rmd",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tdjames1",
+    "repo": "wb-rmd-test-202408",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tdjames1",
+    "repo": "wb-test-202408",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "ModernStats_Git",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "ModernStats_Python",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "ModernStats_R",
     "owner_type": "user"
   },
   {
     "owner": "tobyhodges",
     "repo": "R-ecology-lesson-1",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "R-ecology-lesson-previous",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "automatic-disco",
     "owner_type": "user"
   },
   {
@@ -1337,6 +1912,11 @@
   {
     "owner": "tobyhodges",
     "repo": "buoyant-barnacle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "cuddly-waffle",
     "owner_type": "user"
   },
   {
@@ -1361,12 +1941,32 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "miniature-octo-happiness",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "probable-pancake",
     "owner_type": "user"
   },
   {
     "owner": "tobyhodges",
+    "repo": "redesigned-palm-tree",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "refactored-sniffle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "rse22-workshop-carpentries-workbench",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "scaling-octo-winner",
     "owner_type": "user"
   },
   {
@@ -1386,6 +1986,11 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "symmetrical-octo-memory",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "upgraded-adventure",
     "owner_type": "user"
   },
@@ -1395,8 +2000,48 @@
     "owner_type": "user"
   },
   {
+    "owner": "tobyhodges",
+    "repo": "urban-meme",
+    "owner_type": "user"
+  },
+  {
+    "owner": "toryn13",
+    "repo": "magnify-meta",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tvsingh",
+    "repo": "github-skillup-2023-10-16-tvsingh",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tzielins",
+    "repo": "private-fair-for-busy-biologists",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tzielins",
+    "repo": "testing-carp-template",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ucla-imls-open-sci",
+    "repo": "collaborative-science-for-librarians",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "ucla-imls-open-sci",
+    "repo": "dmp101",
+    "owner_type": "organization"
+  },
+  {
     "owner": "ucla-imls-open-sci",
     "repo": "open-qualitative-research",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "ucla-imls-open-sci",
+    "repo": "spanconj",
     "owner_type": "organization"
   },
   {
@@ -1410,6 +2055,16 @@
     "owner_type": "organization"
   },
   {
+    "owner": "vantage6",
+    "repo": "vantage6-workshop",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "vhmcck",
+    "repo": "github-skillup-2023-10-11-vhmcck",
+    "owner_type": "user"
+  },
+  {
     "owner": "zedif",
     "repo": "julia-introduction",
     "owner_type": "organization"
@@ -1417,6 +2072,11 @@
   {
     "owner": "zkamvar",
     "repo": "Basic_Python",
+    "owner_type": "user"
+  },
+  {
+    "owner": "zkamvar",
+    "repo": "comp_R_test",
     "owner_type": "user"
   },
   {
@@ -1497,6 +2157,11 @@
   {
     "owner": "zkamvar",
     "repo": "upgraded-eureka",
+    "owner_type": "user"
+  },
+  {
+    "owner": "zmek",
+    "repo": "emergency-bed-predictor",
     "owner_type": "user"
   }
 ]

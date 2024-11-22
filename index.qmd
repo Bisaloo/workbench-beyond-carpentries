@@ -378,4 +378,12 @@ report::cite_packages()
 
 :::
 
+# Extra materials
 
+```{=html}
+<iframe width="780" height="500" src="extra/CCHD24_slides.pdf"></iframe>
+```
+
+```{=html}
+<iframe width="780" height="1105" src="extra/CCHD24_poster.pdf"></iframe>
+```

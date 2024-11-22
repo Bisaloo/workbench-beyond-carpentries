@@ -266,18 +266,40 @@ sandpaper_versions |>
     )
 ```
 
-### Are extra features added?
+### Are extra features added? {height=20%}
 
 ```{r}
-config_contents |> 
+uses_fork <- config_contents |> 
   purrr::set_names(repos_workbench$repo) |>
   purrr::imap(~ c(name = .y, custom = .x[c("sandpaper", "varnish","pegboard")])) |> 
-  dplyr::bind_rows() |> 
-  dplyr::select(-name) |>
-  dplyr::rowwise() |> 
-  dplyr::mutate(forked_component = any(!is.na(c_across(everything())))) |>
-  dplyr::pull(forked_component) |>
-  sum()
+  dplyr::bind_rows()
+```
+
+```{r}
+#| content: valuebox
+#| title: "Custom varnish fork"
+#| color: secondary
+list(
+  value = sum(!is.na(uses_fork$custom.varnish))
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Custom sandpaper fork"
+#| color: secondary
+list(
+  value = sum(!is.na(uses_fork$custom.sandpaper))
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Custom pegboard fork"
+#| color: secondary
+list(
+  value = sum(!is.na(uses_fork$custom.pegboard))
+)
 ```
 
 # Screenshots {scrolling="true"}

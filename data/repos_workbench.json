@@ -5,6 +5,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "AIMS-Project",
+    "repo": "timeseries_in_R",
+    "owner_type": "organization"
+  },
+  {
     "owner": "AbiReg",
     "repo": "github-skillup-2023-10-16-AbiReg",
     "owner_type": "user"
@@ -18,6 +23,16 @@
     "owner": "BioRDM",
     "repo": "fair-for-busy-biologists",
     "owner_type": "organization"
+  },
+  {
+    "owner": "CH-Liv",
+    "repo": "ReproducibleResearch",
+    "owner_type": "user"
+  },
+  {
+    "owner": "CH-Liv",
+    "repo": "Workbench-test",
+    "owner_type": "user"
   },
   {
     "owner": "COMP1005",
@@ -77,6 +92,11 @@
   {
     "owner": "FAIR2-for-research-software",
     "repo": "Software_Lifecycle_Planning",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "FAIR2-for-research-software",
+    "repo": "python-testing-for-research",
     "owner_type": "organization"
   },
   {
@@ -152,6 +172,11 @@
   {
     "owner": "JCSzamosi",
     "repo": "github-skillup-2023-10-26-JCSzamosi",
+    "owner_type": "user"
+  },
+  {
+    "owner": "KJoyalDesmarais",
+    "repo": "ReproResearch",
     "owner_type": "user"
   },
   {
@@ -300,6 +325,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "Martin87smith",
+    "repo": "UoS_Reproducibility",
+    "owner_type": "user"
+  },
+  {
     "owner": "MetOffice",
     "repo": "git-working-practices",
     "owner_type": "organization"
@@ -330,6 +360,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "QuTech-Delft",
+    "repo": "prosoftdev-research",
+    "owner_type": "organization"
+  },
+  {
     "owner": "RSE-Sheffield",
     "repo": "pando-python",
     "owner_type": "organization"
@@ -353,6 +388,11 @@
     "owner": "Romain-Thomas-Shef",
     "repo": "Publish_software_training",
     "owner_type": "user"
+  },
+  {
+    "owner": "SS-NES",
+    "repo": "SS-NES-lesson",
+    "owner_type": "organization"
   },
   {
     "owner": "Sara-Ll",
@@ -460,6 +500,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "acnewton",
+    "repo": "quresdattales",
+    "owner_type": "user"
+  },
+  {
     "owner": "acrall",
     "repo": "github-skillup-2023-10-16-acrall",
     "owner_type": "user"
@@ -537,6 +582,11 @@
   {
     "owner": "bentley-historical-library",
     "repo": "bitcurator-intro",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "bham-carpentries",
+    "repo": "2024-11-26-r-intro",
     "owner_type": "organization"
   },
   {
@@ -1320,6 +1370,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "esciencecenter-digital-skills",
+    "repo": "reproducible-research-through-reusable-code",
+    "owner_type": "organization"
+  },
+  {
     "owner": "fboehm",
     "repo": "workflowr-workshop",
     "owner_type": "user"
@@ -1515,6 +1570,21 @@
     "owner_type": "user"
   },
   {
+    "owner": "karina-rodriguez",
+    "repo": "2024-VR-scene",
+    "owner_type": "user"
+  },
+  {
+    "owner": "karina-rodriguez",
+    "repo": "2024-VR-sensing",
+    "owner_type": "user"
+  },
+  {
+    "owner": "karina-rodriguez",
+    "repo": "2024-XR-interoperability",
+    "owner_type": "user"
+  },
+  {
     "owner": "katefoneill",
     "repo": "fair4rs_software_licensing",
     "owner_type": "user"
@@ -1645,6 +1715,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "mtorrespinedo",
+    "repo": "Reproducible-Research-Lessons",
+    "owner_type": "user"
+  },
+  {
     "owner": "ndporter",
     "repo": "github-skillup-2024-05-21-ndporter",
     "owner_type": "user"
@@ -1662,6 +1737,16 @@
   {
     "owner": "ns-rse",
     "repo": "git-collaboration-backup",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ocaisa",
+    "repo": "hpc-workflows-de",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ocaisa",
+    "repo": "hpc-workflows-es",
     "owner_type": "user"
   },
   {
@@ -1687,6 +1772,11 @@
   {
     "owner": "parvin74",
     "repo": "imaging_underground",
+    "owner_type": "user"
+  },
+  {
+    "owner": "perellonieto",
+    "repo": "ReproducibleResearch",
     "owner_type": "user"
   },
   {
@@ -1730,6 +1820,16 @@
     "owner_type": "organization"
   },
   {
+    "owner": "sabrinaburr",
+    "repo": "ReproducibleResearch",
+    "owner_type": "user"
+  },
+  {
+    "owner": "scb6978",
+    "repo": "Reproducible-Res",
+    "owner_type": "user"
+  },
+  {
     "owner": "scottcpeterson",
     "repo": "github-skillup-2023-10-17-scottcpeterson",
     "owner_type": "user"
@@ -1747,6 +1847,11 @@
   {
     "owner": "siobhon-egan",
     "repo": "git-command-line",
+    "owner_type": "user"
+  },
+  {
+    "owner": "smcclatchy",
+    "repo": "eqtl-mapping",
     "owner_type": "user"
   },
   {
@@ -1822,6 +1927,11 @@
   {
     "owner": "swcarpentry",
     "repo": "sql-novice-survey",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "swcarpentry-ja",
+    "repo": "git-novice",
     "owner_type": "organization"
   },
   {
@@ -2023,6 +2133,16 @@
     "owner": "tzielins",
     "repo": "testing-carp-template",
     "owner_type": "user"
+  },
+  {
+    "owner": "ucla-data-science-center",
+    "repo": "lc-cure-01",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "ucla-data-science-center",
+    "repo": "lc-cure-02",
+    "owner_type": "organization"
   },
   {
     "owner": "ucla-imls-open-sci",

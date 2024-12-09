@@ -91,7 +91,17 @@
   },
   {
     "owner": "FAIR2-for-research-software",
+    "repo": "FAIR_Code_design",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "FAIR2-for-research-software",
     "repo": "Software_Lifecycle_Planning",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "FAIR2-for-research-software",
+    "repo": "git-collaboration",
     "owner_type": "organization"
   },
   {
@@ -162,6 +172,11 @@
   {
     "owner": "INTERSECT-training",
     "repo": "Project-Management",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "IPCC-AR7",
+    "repo": "ipcc-author-guidance",
     "owner_type": "organization"
   },
   {
@@ -377,11 +392,6 @@
   {
     "owner": "Romain-Thomas-Shef",
     "repo": "FAIR24RS_Software_lifecycle_planning",
-    "owner_type": "user"
-  },
-  {
-    "owner": "Romain-Thomas-Shef",
-    "repo": "FAIR_Code_design",
     "owner_type": "user"
   },
   {
@@ -867,6 +877,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "python-humanities-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "python-intermediate-development",
     "owner_type": "organization"
   },
   {
@@ -1585,6 +1600,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "kcl-eresearch",
+    "repo": "ReproducibleResearch",
+    "owner_type": "organization"
+  },
+  {
     "owner": "kerchner",
     "repo": "lc-open-reproducible-research-cloud",
     "owner_type": "user"
@@ -1665,6 +1685,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "melbournebioinformatics",
+    "repo": "seurat-de",
+    "owner_type": "organization"
+  },
+  {
     "owner": "metut",
     "repo": "github-skillup-2024-05-29-metut",
     "owner_type": "user"
@@ -1707,11 +1732,6 @@
   {
     "owner": "ndporter",
     "repo": "github-skillup-2024-05-29-ndporter",
-    "owner_type": "user"
-  },
-  {
-    "owner": "ns-rse",
-    "repo": "git-collaboration",
     "owner_type": "user"
   },
   {

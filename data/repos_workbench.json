@@ -15,6 +15,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "Arielle-Bennett",
+    "repo": "github-skillup-2024-12-11-Arielle-Bennett",
+    "owner_type": "user"
+  },
+  {
     "owner": "Azinkarimzad",
     "repo": "imaging_underground",
     "owner_type": "user"
@@ -110,6 +115,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "GBodeker",
+    "repo": "github-skillup-2024-12-11-GBodeker",
+    "owner_type": "user"
+  },
+  {
     "owner": "HERMES-DKZ",
     "repo": "OpenRefine-humanities",
     "owner_type": "organization"
@@ -117,6 +127,11 @@
   {
     "owner": "HERMES-DKZ",
     "repo": "RDBMS-with-NocoDB-in-the-humanities",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "HPCBio",
+    "repo": "hpcbio-swc-bioc-intro",
     "owner_type": "organization"
   },
   {
@@ -225,6 +240,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "KUBDatalab",
+    "repo": "R_web_scraping",
+    "owner_type": "organization"
+  },
+  {
     "owner": "LearnToDiscover",
     "repo": "case-study-antibodies",
     "owner_type": "organization"
@@ -233,6 +253,11 @@
     "owner": "LearnToDiscover",
     "repo": "lesson-template",
     "owner_type": "organization"
+  },
+  {
+    "owner": "Lextuga007",
+    "repo": "github-skillup-2024-12-11-lextuga007",
+    "owner_type": "user"
   },
   {
     "owner": "LibraryCarpentry",
@@ -370,6 +395,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "PhilReedData",
+    "repo": "github-skillup-2024-12-11-PhilReedData",
+    "owner_type": "user"
+  },
+  {
     "owner": "PythonFZ",
     "repo": "stunning-engine",
     "owner_type": "user"
@@ -430,6 +460,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "TiernanOSullivan",
+    "repo": "github-skillup-2024-12-11-TiernanOSullivan",
+    "owner_type": "user"
+  },
+  {
     "owner": "UAL-RE",
     "repo": "lc-containers_vms",
     "owner_type": "organization"
@@ -466,7 +501,7 @@
   },
   {
     "owner": "UW-Madison-DataScience",
-    "repo": "ML_with_Amazon_SageMaker",
+    "repo": "R-gitlab-lesson",
     "owner_type": "organization"
   },
   {
@@ -701,6 +736,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "ML_with_AWS_SageMaker",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "R-ecology-lesson-intermediate",
     "owner_type": "organization"
   },
@@ -732,6 +772,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "SDC-BIDS-sMRI",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "ai-teacher-feedback-lesson",
     "owner_type": "organization"
   },
   {
@@ -792,6 +837,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "gap-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "gen-ai-coding",
     "owner_type": "organization"
   },
   {
@@ -1250,6 +1300,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "dkz2r",
+    "repo": "latex-novice-academic-publishing",
+    "owner_type": "user"
+  },
+  {
     "owner": "dmgatti",
     "repo": "GBRS_Tutorial",
     "owner_type": "user"
@@ -1347,11 +1402,6 @@
   {
     "owner": "esciencecenter-digital-skills",
     "repo": "good-practices-lesson",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "esciencecenter-digital-skills",
-    "repo": "lesson-machine-learning-intro",
     "owner_type": "organization"
   },
   {
@@ -1735,6 +1785,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "nickyjgarland",
+    "repo": "github-skillup-2024-12-11-nickyjgarland",
+    "owner_type": "user"
+  },
+  {
     "owner": "ns-rse",
     "repo": "git-collaboration-backup",
     "owner_type": "user"
@@ -1760,11 +1815,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "olgaminaeva",
-    "repo": "gen-ai-coding",
-    "owner_type": "user"
-  },
-  {
     "owner": "owsleybc",
     "repo": "github-skillup-2024-05-21-owsleybc",
     "owner_type": "user"
@@ -1772,6 +1822,11 @@
   {
     "owner": "parvin74",
     "repo": "imaging_underground",
+    "owner_type": "user"
+  },
+  {
+    "owner": "peranti",
+    "repo": "github-skillup-2024-12-11-peranti",
     "owner_type": "user"
   },
   {
@@ -2046,6 +2101,21 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "github-skillup-2024-12-11-NPDebs",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "github-skillup-2024-12-11-SaraVilla",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "github-skillup-2024-12-11-aReallyGoodTrainwreck",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "metagenomics-workshop-workbench",
     "owner_type": "user"
   },
@@ -2187,6 +2257,11 @@
   {
     "owner": "vhmcck",
     "repo": "github-skillup-2023-10-11-vhmcck",
+    "owner_type": "user"
+  },
+  {
+    "owner": "vinisalazar",
+    "repo": "intro-to-R",
     "owner_type": "user"
   },
   {

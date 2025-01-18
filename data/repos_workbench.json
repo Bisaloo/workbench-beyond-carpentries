@@ -120,6 +120,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "Goli-SF",
+    "repo": "stat_inf_data_vis",
+    "owner_type": "user"
+  },
+  {
     "owner": "HERMES-DKZ",
     "repo": "OpenRefine-humanities",
     "owner_type": "organization"
@@ -741,6 +746,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "Natural-language-processing",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "R-ecology-lesson-intermediate",
     "owner_type": "organization"
   },
@@ -827,6 +837,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "fair-explainable-ml",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "fair-for-busy-biologists",
     "owner_type": "organization"
   },
   {
@@ -927,6 +942,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "python-humanities-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "python-interactive-data-visualizations",
     "owner_type": "organization"
   },
   {
@@ -1325,11 +1345,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "eduardklap",
-    "repo": "prep-pub-pkg",
-    "owner_type": "user"
-  },
-  {
     "owner": "elichad",
     "repo": "ubiquitous-journey",
     "owner_type": "user"
@@ -1391,11 +1406,6 @@
   },
   {
     "owner": "esciencecenter-digital-skills",
-    "repo": "Natural-language-processing",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "esciencecenter-digital-skills",
     "repo": "efficient-computing-in-julia",
     "owner_type": "organization"
   },
@@ -1417,6 +1427,11 @@
   {
     "owner": "esciencecenter-digital-skills",
     "repo": "reproducible-research-through-reusable-code",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "eur-nl",
+    "repo": "prep-pub-pkg",
     "owner_type": "organization"
   },
   {
@@ -1860,16 +1875,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "razoumov",
-    "repo": "chapel-testing",
-    "owner_type": "user"
-  },
-  {
-    "owner": "razoumov",
-    "repo": "workbench-testing",
-    "owner_type": "user"
-  },
-  {
     "owner": "role-model",
     "repo": "multidim-biodiv-data",
     "owner_type": "organization"
@@ -2101,21 +2106,6 @@
   },
   {
     "owner": "tobyhodges",
-    "repo": "github-skillup-2024-12-11-NPDebs",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "github-skillup-2024-12-11-SaraVilla",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "github-skillup-2024-12-11-aReallyGoodTrainwreck",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
     "repo": "metagenomics-workshop-workbench",
     "owner_type": "user"
   },
@@ -2152,11 +2142,6 @@
   {
     "owner": "tobyhodges",
     "repo": "solid-funicular",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "solid-spoon",
     "owner_type": "user"
   },
   {
@@ -2217,6 +2202,16 @@
   {
     "owner": "ucla-data-science-center",
     "repo": "lc-cure-02",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "ucla-data-science-center",
+    "repo": "rclone-intro",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "ucla-data-science-center",
+    "repo": "rclone-intro2",
     "owner_type": "organization"
   },
   {

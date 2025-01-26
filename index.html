@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hugo Gruson">
-<meta name="dcterms.date" content="2025-01-22">
+<meta name="dcterms.date" content="2025-01-26">
 
 <title>Use of the workbench beyond the Carpentries</title>
 <style>
@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-66ab7fd5e73b7f0a764e0d49b3e29ab1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-5d273a1ff4adf73f0f118b44fe34c122.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-0eb30e7540c6cda2b03ab23c67edfead.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="index_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="index_files/libs/quarto-dashboard/stickythead.js"></script>
 <script src="index_files/libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
@@ -66,14 +66,33 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">Hugo Gruson</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-overview" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#overview" data-scrolling="false" href="#overview" aria-controls="overview" aria-selected="true"><span class="nav-link-text">Overview</span></a></li><li class="nav-item" role="presentation"><a id="tab-screenshots" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#screenshots" data-scrolling="true" href="#screenshots" aria-controls="screenshots" aria-selected="false"><span class="nav-link-text">Screenshots</span></a></li><li class="nav-item" role="presentation"><a id="tab-methods" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#methods" data-scrolling="false" href="#methods" aria-controls="methods" aria-selected="false"><span class="nav-link-text">Methods</span></a></li><li class="nav-item" role="presentation"><a id="tab-extra-materials" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#extra-materials" data-scrolling="false" href="#extra-materials" aria-controls="extra-materials" aria-selected="false"><span class="nav-link-text">Extra materials</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="https://github.com/Bisaloo/workbench-beyond-carpentries/" title="GitHub"><i class="bi bi-github"></i></a></div></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-introduction" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#introduction" data-scrolling="false" href="#introduction" aria-controls="introduction" aria-selected="true"><span class="nav-link-text">Introduction</span></a></li><li class="nav-item" role="presentation"><a id="tab-overview" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#overview" data-scrolling="false" href="#overview" aria-controls="overview" aria-selected="false"><span class="nav-link-text">Overview</span></a></li><li class="nav-item" role="presentation"><a id="tab-screenshots" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#screenshots" data-scrolling="true" href="#screenshots" aria-controls="screenshots" aria-selected="false"><span class="nav-link-text">Screenshots</span></a></li><li class="nav-item" role="presentation"><a id="tab-methods" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#methods" data-scrolling="false" href="#methods" aria-controls="methods" aria-selected="false"><span class="nav-link-text">Methods</span></a></li><li class="nav-item" role="presentation"><a id="tab-extra-materials" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#extra-materials" data-scrolling="false" href="#extra-materials" aria-controls="extra-materials" aria-selected="false"><span class="nav-link-text">Extra materials</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="https://github.com/Bisaloo/workbench-beyond-carpentries/" title="GitHub"><i class="bi bi-github"></i></a></div></div></div>
 </nav>
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
 
 <div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div id="overview" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-overview">
+<div id="introduction" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-introduction">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p>The Carpentries workbench is a set of R packages that provides the infrastructure for all Carpentries lesson materials since 2023. It can be considered as a free, open-source and fully reusable Learning Management System (LMS). The code is available on GitHub under an MIT license and the hosting and automation setup are provided transparently as configuration as code, and for free via GitHub Pages and GitHub Actions. This makes the workbench a prime candidate for any external community that wishes to use a well-tested, free and replicable LMS. In this dashboard, I investigate the use of the workbench in external communities, beyond the Carpentries. This dashboard thus targets multiple audiences and serves multiple purposes:</p>
+<ul>
+<li>Strengthen the case for the further funding of the workbench as a critical piece of technical infrastructure, not just for the Carpentries, but also for adjacent external communities</li>
+<li>Potentially inform the future development of the workbench by highlighting our struggles as an external community adopting this framework, and by analyzing forks of the workbench packages</li>
+<li>Demonstrate to external communities the steps they can follow to use the workbench for their own training materials, including how to define and implement a custom theme.</li>
+</ul>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div id="overview" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-overview">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 25fr) minmax(3em, 50fr) minmax(3em, 25fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 20fr) minmax(3em, 80fr); grid-auto-columns: minmax(0, 1fr);">
@@ -267,7 +286,7 @@ Custom pegboard fork
 </div>
 </div>
 </div>
-</div><div id="screenshots" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" data-scrolling="true" aria-labelledby="tab-screenshots">
+</div><div id="screenshots" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-scrolling="true" data-orientation="columns" aria-labelledby="tab-screenshots">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">

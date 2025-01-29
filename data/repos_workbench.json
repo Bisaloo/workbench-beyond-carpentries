@@ -831,6 +831,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "fair-bio-practice",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "fair-data-management-agriculture",
     "owner_type": "organization"
   },
@@ -842,6 +847,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "fair-for-busy-biologists",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "fair-for-leaders",
     "owner_type": "organization"
   },
   {
@@ -1012,6 +1022,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "task-management",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "tei-xml",
     "owner_type": "organization"
   },
   {
@@ -1395,11 +1410,6 @@
     "owner_type": "organization"
   },
   {
-    "owner": "erinmgraham",
-    "repo": "github-skillup-2024-05-21-erinmgraham",
-    "owner_type": "user"
-  },
-  {
     "owner": "erwinlares",
     "repo": "intermediate-software-dev-r",
     "owner_type": "user"
@@ -1580,11 +1590,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "joelnitta",
-    "repo": "test-lesson-trans",
-    "owner_type": "user"
-  },
-  {
     "owner": "jsgro",
     "repo": "buoyant-barnacle",
     "owner_type": "user"
@@ -1740,6 +1745,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "martinosorb",
+    "repo": "python-novice-pygame",
+    "owner_type": "user"
+  },
+  {
     "owner": "matthieu-bruneaux",
     "repo": "github-skillup-2023-10-11-matthieu-bruneaux",
     "owner_type": "user"
@@ -1748,6 +1758,11 @@
     "owner": "meghalgandhi1019",
     "repo": "github-skillup-2024-05-29-meghalgandhi1019",
     "owner_type": "user"
+  },
+  {
+    "owner": "melbournebioinformatics",
+    "repo": "intro-to-R",
+    "owner_type": "organization"
   },
   {
     "owner": "melbournebioinformatics",
@@ -2116,6 +2131,11 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "probable-enigma",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "probable-pancake",
     "owner_type": "user"
   },
@@ -2146,6 +2166,16 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "solid-waddle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "studious-happiness",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "sturdy-enigma",
     "owner_type": "user"
   },
@@ -2167,6 +2197,11 @@
   {
     "owner": "tobyhodges",
     "repo": "upgraded-engine",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "upgraded-funicular",
     "owner_type": "user"
   },
   {
@@ -2206,12 +2241,12 @@
   },
   {
     "owner": "ucla-data-science-center",
-    "repo": "rclone-intro",
+    "repo": "lc-cure-03",
     "owner_type": "organization"
   },
   {
     "owner": "ucla-data-science-center",
-    "repo": "rclone-intro2",
+    "repo": "rclone-intro",
     "owner_type": "organization"
   },
   {
@@ -2252,11 +2287,6 @@
   {
     "owner": "vhmcck",
     "repo": "github-skillup-2023-10-11-vhmcck",
-    "owner_type": "user"
-  },
-  {
-    "owner": "vinisalazar",
-    "repo": "intro-to-R",
     "owner_type": "user"
   },
   {

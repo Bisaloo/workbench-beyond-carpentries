@@ -21,6 +21,8 @@ jobs:
         with:
           use-public-rspm: true
       - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: local::.
       - run: |
           workbench.analysis::find_workbench_repos("data/repos_workbench.json")
         shell: Rscript {0}

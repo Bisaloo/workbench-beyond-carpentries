@@ -301,6 +301,11 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-open-qualitative-research",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-open-refine",
     "owner_type": "organization"
   },
@@ -811,6 +816,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "blogging-with-hugo-and-github-pages",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "collaborative-git-and-github-lesson",
     "owner_type": "organization"
   },
@@ -882,6 +892,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "gitlab-novice",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "high-dimensional-stats-r",
     "owner_type": "organization"
   },
   {
@@ -1680,11 +1695,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "kerchner",
-    "repo": "workbench-rmd-test",
-    "owner_type": "user"
-  },
-  {
     "owner": "kristi-sara",
     "repo": "github-skillup-2023-10-16-Kristi-sara",
     "owner_type": "user"
@@ -1817,11 +1827,6 @@
   {
     "owner": "nickyjgarland",
     "repo": "github-skillup-2024-12-11-nickyjgarland",
-    "owner_type": "user"
-  },
-  {
-    "owner": "ns-rse",
-    "repo": "git-collaboration-backup",
     "owner_type": "user"
   },
   {

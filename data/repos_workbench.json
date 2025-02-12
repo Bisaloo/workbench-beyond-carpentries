@@ -120,11 +120,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "Goli-SF",
-    "repo": "stat_inf_data_vis",
-    "owner_type": "user"
-  },
-  {
     "owner": "HERMES-DKZ",
     "repo": "OpenRefine-humanities",
     "owner_type": "organization"
@@ -400,6 +395,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "NPDebs",
+    "repo": "github-skillup-2024-12-11-NPDebs-fork",
+    "owner_type": "user"
+  },
+  {
     "owner": "NclRSE-Training",
     "repo": "python-novice-programming-gapminder",
     "owner_type": "organization"
@@ -592,11 +592,6 @@
   {
     "owner": "anenadic",
     "repo": "my-lesson",
-    "owner_type": "user"
-  },
-  {
-    "owner": "aseetharam",
-    "repo": "rcac_gene-prediction_workshop",
     "owner_type": "user"
   },
   {
@@ -826,12 +821,12 @@
   },
   {
     "owner": "carpentries-incubator",
-    "repo": "deep-learning-intro",
+    "repo": "docker-introduction",
     "owner_type": "organization"
   },
   {
     "owner": "carpentries-incubator",
-    "repo": "docker-introduction",
+    "repo": "efficient-computing-in-julia",
     "owner_type": "organization"
   },
   {
@@ -892,6 +887,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "gitlab-novice",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "good-practices-lesson",
     "owner_type": "organization"
   },
   {
@@ -1047,6 +1047,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "workflows-nextflow",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-lab",
+    "repo": "deep-learning-intro",
     "owner_type": "organization"
   },
   {
@@ -1431,16 +1436,6 @@
   },
   {
     "owner": "esciencecenter-digital-skills",
-    "repo": "efficient-computing-in-julia",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "esciencecenter-digital-skills",
-    "repo": "good-practices-lesson",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "esciencecenter-digital-skills",
     "repo": "lesson-model-coupling",
     "owner_type": "organization"
   },
@@ -1607,6 +1602,11 @@
   {
     "owner": "jsgro",
     "repo": "buoyant-barnacle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "jsteyn",
+    "repo": "HPC_Intro",
     "owner_type": "user"
   },
   {
@@ -2067,16 +2067,6 @@
   {
     "owner": "tobyhodges",
     "repo": "ModernStats_Git",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "ModernStats_Python",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "ModernStats_R",
     "owner_type": "user"
   },
   {

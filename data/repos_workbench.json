@@ -85,6 +85,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "EPCCed",
+    "repo": "2023-06-28-uoe-hpcintro",
+    "owner_type": "organization"
+  },
+  {
     "owner": "ErinBecker",
     "repo": "sourdough-cinnamon-rolls",
     "owner_type": "user"
@@ -673,6 +678,11 @@
     "owner": "callaghanmt-training",
     "repo": "swd1a-python-2023",
     "owner_type": "organization"
+  },
+  {
+    "owner": "carolbooth2",
+    "repo": "hpc-intro-draft2",
+    "owner_type": "user"
   },
   {
     "owner": "carpentries",
@@ -1605,11 +1615,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "jsteyn",
-    "repo": "HPC_Intro",
-    "owner_type": "user"
-  },
-  {
     "owner": "jt14den",
     "repo": "lc-github-to-local",
     "owner_type": "user"
@@ -1776,6 +1781,11 @@
   },
   {
     "owner": "melbournebioinformatics",
+    "repo": "intro-to-git",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "melbournebioinformatics",
     "repo": "seurat-de",
     "owner_type": "organization"
   },
@@ -1893,6 +1903,11 @@
     "owner": "rasundsbak",
     "repo": "zoterokurs",
     "owner_type": "user"
+  },
+  {
+    "owner": "rcac-bioinformatics",
+    "repo": "genome-assembly",
+    "owner_type": "organization"
   },
   {
     "owner": "role-model",
@@ -2097,11 +2112,6 @@
   {
     "owner": "tobyhodges",
     "repo": "cuddly-waffle",
-    "owner_type": "user"
-  },
-  {
-    "owner": "tobyhodges",
-    "repo": "docker-intro-transition-test",
     "owner_type": "user"
   },
   {

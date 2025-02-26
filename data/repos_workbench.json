@@ -91,6 +91,11 @@
   },
   {
     "owner": "ErinBecker",
+    "repo": "family-research-lesson",
+    "owner_type": "user"
+  },
+  {
+    "owner": "ErinBecker",
     "repo": "sourdough-cinnamon-rolls",
     "owner_type": "user"
   },
@@ -906,6 +911,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "hermes_stat_inf_data_vis",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "high-dimensional-stats-r",
     "owner_type": "organization"
   },
@@ -1241,11 +1251,6 @@
   },
   {
     "owner": "datacarpentry",
-    "repo": "R-ecology-lesson",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
     "repo": "astronomy-python",
     "owner_type": "organization"
   },
@@ -1362,6 +1367,11 @@
   {
     "owner": "davidrpugh",
     "repo": "buoyant-barnacle",
+    "owner_type": "user"
+  },
+  {
+    "owner": "dhuppenkothen",
+    "repo": "stat-phys-notes",
     "owner_type": "user"
   },
   {
@@ -1805,16 +1815,6 @@
     "owner_type": "user"
   },
   {
-    "owner": "milanmlft",
-    "repo": "sandpaper-test",
-    "owner_type": "user"
-  },
-  {
-    "owner": "milanmlft",
-    "repo": "sandpaper-test-releases",
-    "owner_type": "user"
-  },
-  {
     "owner": "misgna3",
     "repo": "github-skillup-2023-10-17-misgna3",
     "owner_type": "user"
@@ -2132,6 +2132,11 @@
   {
     "owner": "tobyhodges",
     "repo": "miniature-octo-happiness",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "potential-train",
     "owner_type": "user"
   },
   {

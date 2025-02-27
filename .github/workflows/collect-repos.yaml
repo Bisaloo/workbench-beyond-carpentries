@@ -34,7 +34,3 @@ jobs:
           git commit -m "Update list of repos using workfbench" || echo "No changes to commit"
           git pull --rebase origin main
           git push
-      - name: Trigger website build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run quarto-publish.yaml

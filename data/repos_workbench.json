@@ -255,6 +255,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "LIDo-2024",
+    "repo": "ML_Supervised_Learning",
+    "owner_type": "organization"
+  },
+  {
     "owner": "LearnToDiscover",
     "repo": "case-study-antibodies",
     "owner_type": "organization"

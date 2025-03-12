@@ -58,6 +58,22 @@ find_workbench_repos <- function(out = stdout()) {
     dplyr::arrange(owner, repo) |>
     dplyr::filter(repo != "sandpaper" | owner != "carpentries")
 
+  # Drop repos that don't have a `config.yaml` file since that's required to be
+  # valid workbench repo
+  has_config <- repos_workbench |>
+    as.list() |>
+    purrr::transpose() |>
+    purrr::map(purrr::possibly(function(repo) {
+      gh::gh(
+        "/repos/{owner}/{repo}/contents/{path}",
+        owner = repo$owner,
+        repo = repo$repo,
+        path = "config.yaml"
+      )
+    })) |>
+    purrr::map_lgl(\(x) !is.null(x))
+
   repos_workbench |>
+    dplyr::filter(has_config) |>
     jsonlite::write_json(out, pretty = TRUE)
 }

@@ -226,7 +226,7 @@
   },
   {
     "owner": "KUBDatalab",
-    "repo": "R-EDA_new",
+    "repo": "R-EDA",
     "owner_type": "organization"
   },
   {
@@ -281,7 +281,17 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-compendium-packaging",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-computational-thinking",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-curation-workflows",
     "owner_type": "organization"
   },
   {
@@ -302,6 +312,11 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-git",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-intro-data-curation",
     "owner_type": "organization"
   },
   {
@@ -332,6 +347,11 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-r",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-reproducibility-assessment",
     "owner_type": "organization"
   },
   {
@@ -1341,6 +1361,11 @@
   },
   {
     "owner": "datacarpentry",
+    "repo": "sql-ecology-lesson",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "datacarpentry",
     "repo": "sql-socialsci",
     "owner_type": "organization"
   },
@@ -1991,11 +2016,6 @@
   },
   {
     "owner": "swcarpentry",
-    "repo": "python-novice-gapminder",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "swcarpentry",
     "repo": "python-novice-inflammation",
     "owner_type": "organization"
   },
@@ -2243,21 +2263,6 @@
     "owner": "tzielins",
     "repo": "testing-carp-template",
     "owner_type": "user"
-  },
-  {
-    "owner": "ucla-data-science-center",
-    "repo": "lc-cure-01",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "ucla-data-science-center",
-    "repo": "lc-cure-02",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "ucla-data-science-center",
-    "repo": "lc-cure-03",
-    "owner_type": "organization"
   },
   {
     "owner": "ucla-data-science-center",

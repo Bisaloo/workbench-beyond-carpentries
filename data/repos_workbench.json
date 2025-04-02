@@ -106,6 +106,11 @@
   },
   {
     "owner": "FAIR2-for-research-software",
+    "repo": "FAIR4RS-Packaging",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "FAIR2-for-research-software",
     "repo": "FAIR4RS-VirtualEnvs",
     "owner_type": "organization"
   },
@@ -366,11 +371,6 @@
   },
   {
     "owner": "LibraryCarpentry",
-    "repo": "lc-shell",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "LibraryCarpentry",
     "repo": "lc-spreadsheets",
     "owner_type": "organization"
   },
@@ -382,11 +382,6 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-team-agreements",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "LibraryCarpentry",
-    "repo": "lc-wikidata",
     "owner_type": "organization"
   },
   {
@@ -781,6 +776,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "Data-Management-Training",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "HPC-workflow-lesson-maestro",
     "owner_type": "organization"
   },
@@ -842,6 +842,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "bioc-project",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "bioc-rnaseq",
     "owner_type": "organization"
   },
   {
@@ -1106,11 +1111,6 @@
   },
   {
     "owner": "carpentries-lab",
-    "repo": "good-enough-practices",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "carpentries-lab",
     "repo": "python-aos-lesson",
     "owner_type": "organization"
   },
@@ -1147,11 +1147,6 @@
   {
     "owner": "chennesy",
     "repo": "lc-python-apis",
-    "owner_type": "user"
-  },
-  {
-    "owner": "christopher-wild",
-    "repo": "FAIR4RS-Packaging",
     "owner_type": "user"
   },
   {
@@ -1286,6 +1281,11 @@
   },
   {
     "owner": "datacarpentry",
+    "repo": "astronomy-python",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "datacarpentry",
     "repo": "cloud-genomics",
     "owner_type": "organization"
   },
@@ -1322,11 +1322,6 @@
   {
     "owner": "datacarpentry",
     "repo": "organization-genomics",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
-    "repo": "organization-geospatial",
     "owner_type": "organization"
   },
   {
@@ -1377,6 +1372,11 @@
   {
     "owner": "datacarpentry",
     "repo": "spreadsheets-socialsci",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "datacarpentry",
+    "repo": "sql-ecology-lesson",
     "owner_type": "organization"
   },
   {
@@ -1452,6 +1452,11 @@
   {
     "owner": "epiverse-trace",
     "repo": "research-compendium",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "epiverse-trace",
+    "repo": "tutorials",
     "owner_type": "organization"
   },
   {
@@ -1836,11 +1841,6 @@
   },
   {
     "owner": "michaelcoe",
-    "repo": "Data-Management-Training",
-    "owner_type": "user"
-  },
-  {
-    "owner": "michaelcoe",
     "repo": "python-data-anonimization",
     "owner_type": "user"
   },
@@ -1852,11 +1852,6 @@
   {
     "owner": "mtorrespinedo",
     "repo": "Reproducible-Research-Lessons",
-    "owner_type": "user"
-  },
-  {
-    "owner": "murraycadzow",
-    "repo": "hpc-intro-new",
     "owner_type": "user"
   },
   {
@@ -2323,6 +2318,11 @@
     "owner": "vhmcck",
     "repo": "github-skillup-2023-10-11-vhmcck",
     "owner_type": "user"
+  },
+  {
+    "owner": "zedif",
+    "repo": "julia-introduction",
+    "owner_type": "organization"
   },
   {
     "owner": "zkamvar",

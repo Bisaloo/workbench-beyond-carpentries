@@ -25,6 +25,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "BLAST-WarpX",
+    "repo": "warpx-tutorials",
+    "owner_type": "organization"
+  },
+  {
     "owner": "BioRDM",
     "repo": "fair-for-busy-biologists",
     "owner_type": "organization"
@@ -38,6 +43,11 @@
     "owner": "CH-Liv",
     "repo": "Workbench-test",
     "owner_type": "user"
+  },
+  {
+    "owner": "CIROH-UA",
+    "repo": "training-NGIAB-101",
+    "owner_type": "organization"
   },
   {
     "owner": "COMP1005",
@@ -133,11 +143,6 @@
     "owner": "FAIR2-for-research-software",
     "repo": "python-testing-for-research",
     "owner_type": "organization"
-  },
-  {
-    "owner": "GBodeker",
-    "repo": "github-skillup-2024-12-11-GBodeker",
-    "owner_type": "user"
   },
   {
     "owner": "HERMES-DKZ",
@@ -306,11 +311,6 @@
   },
   {
     "owner": "LibraryCarpentry",
-    "repo": "lc-data-intro",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "LibraryCarpentry",
     "repo": "lc-data-intro-archives",
     "owner_type": "organization"
   },
@@ -327,11 +327,6 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-intro-data-curation",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "LibraryCarpentry",
-    "repo": "lc-marcedit",
     "owner_type": "organization"
   },
   {
@@ -382,6 +377,11 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-team-agreements",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-wikidata",
     "owner_type": "organization"
   },
   {
@@ -736,11 +736,6 @@
   },
   {
     "owner": "carpentries",
-    "repo": "lesson-development-training",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "carpentries",
     "repo": "lessondev-trainer-training",
     "owner_type": "organization"
   },
@@ -816,11 +811,6 @@
   },
   {
     "owner": "carpentries-incubator",
-    "repo": "SDC-BIDS-dMRI",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "carpentries-incubator",
     "repo": "SDC-BIDS-fMRI",
     "owner_type": "organization"
   },
@@ -862,11 +852,6 @@
   {
     "owner": "carpentries-incubator",
     "repo": "collaborative-git-and-github-lesson",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "carpentries-incubator",
-    "repo": "dennis.tim-gmail.com",
     "owner_type": "organization"
   },
   {
@@ -966,6 +951,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "intro-image-classification-cnn",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "intro-to-modern-fortran",
     "owner_type": "organization"
   },
@@ -992,6 +982,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "lesson-parallel-python",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "machine-learning-librarians-archivists",
     "owner_type": "organization"
   },
   {
@@ -1107,6 +1102,11 @@
   {
     "owner": "carpentries-lab",
     "repo": "deep-learning-intro",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-lab",
+    "repo": "good-enough-practices",
     "owner_type": "organization"
   },
   {
@@ -1291,11 +1291,6 @@
   },
   {
     "owner": "datacarpentry",
-    "repo": "ecology-workshop",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
     "repo": "genomics-r-intro",
     "owner_type": "organization"
   },
@@ -1316,12 +1311,12 @@
   },
   {
     "owner": "datacarpentry",
-    "repo": "openrefine-socialsci",
+    "repo": "organization-genomics",
     "owner_type": "organization"
   },
   {
     "owner": "datacarpentry",
-    "repo": "organization-genomics",
+    "repo": "organization-geospatial",
     "owner_type": "organization"
   },
   {
@@ -1357,11 +1352,6 @@
   {
     "owner": "datacarpentry",
     "repo": "shell-genomics",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
-    "repo": "socialsci-workshop",
     "owner_type": "organization"
   },
   {
@@ -1451,17 +1441,7 @@
   },
   {
     "owner": "epiverse-trace",
-    "repo": "research-compendium",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "epiverse-trace",
     "repo": "tutorials",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "epiverse-trace",
-    "repo": "tutorials-early",
     "owner_type": "organization"
   },
   {
@@ -1720,6 +1700,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "katiebuntic",
+    "repo": "intro-to-research-data-management-carpentries",
+    "owner_type": "user"
+  },
+  {
     "owner": "katilp",
     "repo": "carpentry-cms-lesson-test",
     "owner_type": "user"
@@ -1810,6 +1795,11 @@
     "owner_type": "user"
   },
   {
+    "owner": "mary-tziraki",
+    "repo": "intro-to-medical-image-processing-for-biomedical-engineering",
+    "owner_type": "user"
+  },
+  {
     "owner": "matthieu-bruneaux",
     "repo": "github-skillup-2023-10-11-matthieu-bruneaux",
     "owner_type": "user"
@@ -1852,6 +1842,11 @@
   {
     "owner": "mtorrespinedo",
     "repo": "Reproducible-Research-Lessons",
+    "owner_type": "user"
+  },
+  {
+    "owner": "murraycadzow",
+    "repo": "hpc-intro-new",
     "owner_type": "user"
   },
   {
@@ -2026,12 +2021,12 @@
   },
   {
     "owner": "swcarpentry",
-    "repo": "python-novice-inflammation",
+    "repo": "python-novice-gapminder",
     "owner_type": "organization"
   },
   {
     "owner": "swcarpentry",
-    "repo": "r-novice-gapminder",
+    "repo": "python-novice-inflammation",
     "owner_type": "organization"
   },
   {
@@ -2131,6 +2126,11 @@
   },
   {
     "owner": "tobyhodges",
+    "repo": "animated-memory",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
     "repo": "automatic-disco",
     "owner_type": "user"
   },
@@ -2157,6 +2157,21 @@
   {
     "owner": "tobyhodges",
     "repo": "fluffy-computing-machine",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "metagenomics-analysis-workbench",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "metagenomics-organization-workbench",
+    "owner_type": "user"
+  },
+  {
+    "owner": "tobyhodges",
+    "repo": "metagenomics-shell-workbench",
     "owner_type": "user"
   },
   {
@@ -2282,11 +2297,6 @@
   {
     "owner": "ucla-imls-open-sci",
     "repo": "collaborative-science-for-librarians",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "ucla-imls-open-sci",
-    "repo": "dmp101",
     "owner_type": "organization"
   },
   {

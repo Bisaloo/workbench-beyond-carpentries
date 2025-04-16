@@ -186,11 +186,6 @@
   },
   {
     "owner": "HealthBioscienceIDEAS",
-    "repo": "microscopy-novice",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "HealthBioscienceIDEAS",
     "repo": "ml-ai-for-medical-data",
     "owner_type": "organization"
   },
@@ -232,6 +227,11 @@
   {
     "owner": "JCSzamosi",
     "repo": "github-skillup-2023-10-26-JCSzamosi",
+    "owner_type": "user"
+  },
+  {
+    "owner": "JeffCarver",
+    "repo": "training-NGIAB-101",
     "owner_type": "user"
   },
   {
@@ -311,6 +311,11 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-data-intro",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-data-intro-archives",
     "owner_type": "organization"
   },
@@ -327,6 +332,11 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-intro-data-curation",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
+    "repo": "lc-marcedit",
     "owner_type": "organization"
   },
   {
@@ -366,6 +376,11 @@
   },
   {
     "owner": "LibraryCarpentry",
+    "repo": "lc-shell",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "LibraryCarpentry",
     "repo": "lc-spreadsheets",
     "owner_type": "organization"
   },
@@ -377,11 +392,6 @@
   {
     "owner": "LibraryCarpentry",
     "repo": "lc-team-agreements",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "LibraryCarpentry",
-    "repo": "lc-wikidata",
     "owner_type": "organization"
   },
   {
@@ -570,6 +580,11 @@
     "owner_type": "organization"
   },
   {
+    "owner": "UoMResearchIT",
+    "repo": "programming_with_python",
+    "owner_type": "organization"
+  },
+  {
     "owner": "Victoria-Bruno",
     "repo": "test-lesson",
     "owner_type": "user"
@@ -736,6 +751,11 @@
   },
   {
     "owner": "carpentries",
+    "repo": "lesson-development-training",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries",
     "repo": "lessondev-trainer-training",
     "owner_type": "organization"
   },
@@ -801,12 +821,22 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "ReproducibleResearch",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "SDC-BIDS-EEG-EEGLAB",
     "owner_type": "organization"
   },
   {
     "owner": "carpentries-incubator",
     "repo": "SDC-BIDS-IntroMRI",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "SDC-BIDS-dMRI",
     "owner_type": "organization"
   },
   {
@@ -842,6 +872,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "bioc-scrnaseq",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "bioimage-analysis-python",
     "owner_type": "organization"
   },
   {
@@ -1106,11 +1141,6 @@
   },
   {
     "owner": "carpentries-lab",
-    "repo": "good-enough-practices",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "carpentries-lab",
     "repo": "python-aos-lesson",
     "owner_type": "organization"
   },
@@ -1211,11 +1241,6 @@
   },
   {
     "owner": "cms-opendata-workshop",
-    "repo": "workshopqcd-2024-lesson-dataset-scouting",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "cms-opendata-workshop",
     "repo": "workshopqcd-2024-lesson-docker",
     "owner_type": "organization"
   },
@@ -1271,11 +1296,6 @@
   },
   {
     "owner": "datacarpentry",
-    "repo": "OpenRefine-ecology-lesson",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
     "repo": "R-ecology-lesson",
     "owner_type": "organization"
   },
@@ -1287,6 +1307,11 @@
   {
     "owner": "datacarpentry",
     "repo": "cloud-genomics",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "datacarpentry",
+    "repo": "ecology-workshop",
     "owner_type": "organization"
   },
   {
@@ -1307,6 +1332,11 @@
   {
     "owner": "datacarpentry",
     "repo": "image-processing",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "datacarpentry",
+    "repo": "openrefine-socialsci",
     "owner_type": "organization"
   },
   {
@@ -1332,11 +1362,6 @@
   {
     "owner": "datacarpentry",
     "repo": "python-socialsci",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "datacarpentry",
-    "repo": "r-intro-geospatial",
     "owner_type": "organization"
   },
   {
@@ -1437,11 +1462,6 @@
   {
     "owner": "epiverse-trace",
     "repo": "epitkit",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "epiverse-trace",
-    "repo": "tutorials",
     "owner_type": "organization"
   },
   {
@@ -1876,11 +1896,6 @@
   },
   {
     "owner": "ocaisa",
-    "repo": "shell-novice-de",
-    "owner_type": "user"
-  },
-  {
-    "owner": "ocaisa",
     "repo": "shell-novice-es",
     "owner_type": "user"
   },
@@ -1971,11 +1986,6 @@
   },
   {
     "owner": "smcclatchy",
-    "repo": "eqtl-mapping",
-    "owner_type": "user"
-  },
-  {
-    "owner": "smcclatchy",
     "repo": "omicstranslationAD_AAIC",
     "owner_type": "user"
   },
@@ -2026,7 +2036,7 @@
   },
   {
     "owner": "swcarpentry",
-    "repo": "python-novice-inflammation",
+    "repo": "r-novice-gapminder",
     "owner_type": "organization"
   },
   {
@@ -2318,6 +2328,11 @@
     "owner": "umn-dash",
     "repo": "r-shiny",
     "owner_type": "organization"
+  },
+  {
+    "owner": "vahtras",
+    "repo": "rust-novice",
+    "owner_type": "user"
   },
   {
     "owner": "vantage6",

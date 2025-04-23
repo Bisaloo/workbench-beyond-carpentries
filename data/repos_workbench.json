@@ -1096,6 +1096,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "reproducible-research-through-reusable-code-in-1-day",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "rna-seq-data-for-ml",
     "owner_type": "organization"
   },
@@ -1492,11 +1497,6 @@
   {
     "owner": "esciencecenter-digital-skills",
     "repo": "lesson-model-coupling",
-    "owner_type": "organization"
-  },
-  {
-    "owner": "esciencecenter-digital-skills",
-    "repo": "reproducible-research-through-reusable-code",
     "owner_type": "organization"
   },
   {

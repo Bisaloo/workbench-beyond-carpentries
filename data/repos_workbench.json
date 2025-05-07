@@ -1041,6 +1041,11 @@
   },
   {
     "owner": "carpentries-incubator",
+    "repo": "machine-learning-neural-python",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
     "repo": "machine-learning-reinforcement-python",
     "owner_type": "organization"
   },
@@ -1087,6 +1092,11 @@
   {
     "owner": "carpentries-incubator",
     "repo": "python-particle-physics",
+    "owner_type": "organization"
+  },
+  {
+    "owner": "carpentries-incubator",
+    "repo": "python-text-analysis",
     "owner_type": "organization"
   },
   {

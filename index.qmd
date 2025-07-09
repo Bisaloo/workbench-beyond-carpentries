@@ -266,7 +266,14 @@ sandpaper_versions <- version_files |>
   tibble::enframe(name = "repo", value = "version") |>
   dplyr::mutate(
     version = purrr::map_chr(version, ~ rawToChar(base64enc::base64decode(.x))),
-    version = stringr::str_remove_all(version, "\\s"),
+    version = stringr::str_remove_all(version, "\\s")
+  ) |>
+  dplyr::filter(
+    # Get rid of malformed numbers since versionr will error otherwise and
+    # wrapping in safely looses the benefit of vectorization
+    grepl("^\\d\\(.\\d){0,3}$", version)
+  ) |>
+  dplyr::mutate(
     version = versionr::version_number(version),
     version = as.factor(version)
   )

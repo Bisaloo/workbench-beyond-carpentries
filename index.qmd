@@ -271,7 +271,7 @@ sandpaper_versions <- version_files |>
   dplyr::filter(
     # Get rid of malformed numbers since versionr will error otherwise and
     # wrapping in safely looses the benefit of vectorization
-    grepl("^\\d\\(.\\d){0,3}$", version)
+    grepl("^\\d(\\.\\d+){0,3}$", version)
   ) |>
   dplyr::mutate(
     version = versionr::version_number(version),
